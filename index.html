@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        
+        <!-- Input field for temperature -->
+        <div class="input-section">
+            <input type="text" id="temperatureInput" placeholder="Enter temperature" />
+            <span class="error-message" id="error-message"></span>
+        </div>
+
+        <!-- Dropdown menu for selecting the input unit -->
+        <select id="inputUnit">
+            <option value="Celsius">Celsius (°C)</option>
+            <option value="Fahrenheit">Fahrenheit (°F)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+        </select>
+        
+        <!-- Dropdown menu for selecting the output unit -->
+        <select id="outputUnit">
+            <option value="Celsius">Celsius (°C)</option>
+            <option value="Fahrenheit">Fahrenheit (°F)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+        </select>
+
+        <!-- Display area for the result -->
+        <div id="resultDisplay" class="result"></div>
+
+        <!-- Additional buttons -->
+        <div class="buttons">
+            <button id="clearButton">Clear</button>
+            <button id="darkModeButton">Toggle Dark Mode</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
